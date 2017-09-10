@@ -9,4 +9,4 @@ FROM alpine:latest
 EXPOSE 9120
 WORKDIR /root
 COPY --from=0 /go/src/github.com/ledgr/powerdns_exporter/powerdns_exporter .
-CMD ["./powerdns_exporter"]
+ENTRYPOINT ["./powerdns_exporter"]
