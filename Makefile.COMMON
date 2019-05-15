@@ -68,7 +68,7 @@ unexport GOBIN
 SUFFIX   ?= $(GOOS)-$(GOARCH)
 BINARY   ?= $(TARGET)
 ARCHIVE  ?= $(TARGET)-$(VERSION).$(SUFFIX).tar.gz
-ROOTPKG  ?= github.com/janeczku/$(TARGET)
+ROOTPKG  ?= github.com/tbaczynski/$(TARGET)
 SELFLINK ?= $(GOPATH)/src/$(ROOTPKG)
 
 default: $(BINARY)
